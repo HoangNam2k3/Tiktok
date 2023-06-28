@@ -1,0 +1,39 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Sofia&display=swap');
+
+:root{
+    --primary-color: #fe2c55;
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #62636a;
+    // defalult layout
+
+    --default-layout-header-header: 60px;
+    --default-layout-width: 1150px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Nova Mono', monospace;
+    font-family: 'Sofia', cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+.flex{
+    display: flex;
+}
+button, input{
+    border: none;
+    outline: none;
+}
+a[href]{
+    text-decoration: none;
+    color: var(--text-color);
+}

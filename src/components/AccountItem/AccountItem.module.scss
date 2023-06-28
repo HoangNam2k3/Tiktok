@@ -1,0 +1,36 @@
+.wrapper{
+    padding: 9px 16px;
+    cursor: pointer;
+    align-items: center;
+    &:hover{
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    padding-left: 8px;
+    line-height: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+    font-size: 1.4rem;
+    
+    span{
+        padding-left: 4px;
+        color: rgb(5, 214, 214);
+    }
+}
+
+.username {
+    font-size: 1.2rem;
+}

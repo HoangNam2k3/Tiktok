@@ -1,0 +1,68 @@
+.wrapper{
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    border: 1px solid transparent;
+    user-select: none;
+
+    // 2 btn canh nhau thi dinh
+    + .wrapper {
+        margin-left: 8px;
+    }
+    //
+    &.disabled{
+        pointer-events: none;
+        opacity: .5;
+    }
+}
+.rounded{
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-color: rgba($color: #161823, $alpha: .12);
+
+    &:hover{
+        border-color: rgba($color: #161823, $alpha: .2);
+        background-color: rgba($color: #161823, $alpha: .03)
+    }
+}
+// Primary
+.primary{
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: transparent;
+
+    &:hover{
+        background-color: #fe2c70;
+    }
+}
+// Ouline
+.ouline{
+    color: var(--primary-color);
+    border-color: currentColor;
+
+    &:hover{
+        border-color: currentColor;
+        background-color: rgba(254, 44, 85, .06);
+    }
+}
+
+// Size
+.small {
+    min-width: 88px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.large{
+    min-width: 120px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.text{
+    &:hover{
+        text-decoration: underline;
+    }
+}
